@@ -13,7 +13,7 @@
 
 ![site preview](https://hitaarthh.github.io/social-image.png)
 
-## Technology Stack 🛠️
+## Technology Used 🛠️
 
 Dependencies defined in package.json:
 
