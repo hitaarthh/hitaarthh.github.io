@@ -22,9 +22,10 @@ const Home = () => {
               <ReactTyped
                 strings={[
                   "Student",
-                  "General Enthusiast",
-                  "Photographer",
                   "Writer",
+                  "Photographer",
+                  "General Enthusiast",
+
                 ]}
                 loop
                 typeSpeed={80}
