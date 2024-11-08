@@ -1,0 +1,451 @@
+@charset "utf-8";
+.dark body {
+  background-color: #000;
+  color: #bbb;
+}
+.dark .theme-switcher-label {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  color: #fff;
+}
+.dark ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff;
+}
+.dark :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+.dark ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+.dark :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+.dark ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+.dark ::placeholder {
+  /* Most modern browsers support this now. */
+  color: #fff;
+}
+.dark #preloader:before,
+.dark #preloader:after {
+  background-color: #fff;
+}
+.dark .loader_line:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #000;
+  -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+  -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+  animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+.dark .loader_line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: lineround 1200ms linear 0s infinite;
+  -o-animation: lineround 1200ms linear 0s infinite;
+  animation: lineround 1200ms linear 0s infinite;
+  animation-delay: 2000ms;
+}
+.dark {
+  background-color: #000;
+  color: #bbb;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #fff;
+}
+.dark .tokyo_tm_all_wrap .leftpart {
+  background-color: #000;
+}
+.dark .tokyo_tm_all_wrap .leftpart .menu > ul li a {
+  color: #bbb;
+  &.active {
+    color: #fff;
+    .svg {
+      opacity: 1;
+    }
+  }
+}
+.dark .tokyo_tm_all_wrap .leftpart .menu > ul li:hover {
+  color: #fff;
+}
+.dark .tokyo_tm_all_wrap .leftpart .copyright p {
+  color: #bbb;
+}
+.dark .tokyo_tm_all_wrap .leftpart .copyright a {
+  color: #bbb;
+}
+.dark .tokyo_tm_all_wrap .leftpart .copyright a:hover {
+  color: #fff;
+}
+.dark .tokyo_tm_all_wrap .rightpart {
+  background-color: #111;
+}
+.dark .tokyo_tm_all_wrap .rightpart_in {
+  border-left-color: #202020;
+}
+.dark .tokyo_tm_home .social li .svg {
+  color: #fff;
+}
+.dark .tokyo_tm_home .social li a {
+  filter: invert(1);
+  &:hover {
+    filter: invert(0.8);
+  }
+}
+.dark .tokyo_tm_all_wrap .leftpart img {
+  filter: invert(1);
+}
+
+.dark .cursor-inner {
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 50;
+  background-color: #fff;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.dark .cursor-inner.cursor-hover {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  opacity: 0.3;
+}
+.dark .cursor-outer {
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 50;
+  opacity: 0.5;
+  -webkit-transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out;
+}
+.dark .header-inner {
+  background: #323232;
+}
+.dark .my_trigger .hamburger .hamburger-inner,
+.dark .my_trigger .hamburger-inner::before,
+.dark .my_trigger .hamburger-inner::after {
+  background: #fff;
+}
+.dark .header .logo img {
+  filter: invert(1);
+}
+.dark .cursor-outer.cursor-hover {
+  opacity: 0;
+}
+.dark .tokyo_tm_button .ib-button {
+  background-color: #fff;
+  color: #000;
+}
+.dark .tokyo_tm_about .description .right > ul > li a {
+  color: #bbb;
+}
+.dark .tokyo_tm_about .description .right > ul > li a:hover {
+  color: #fff;
+}
+.dark .tokyo_tm_about .description .right > ul > li span {
+  color: #fff;
+}
+
+.dark .tokyo_tm_modalbox_about .counter ul li span {
+  color: #bbb;
+}
+.dark .tokyo_tm_title span {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #999;
+}
+.dark .tokyo_tm_portfolio .portfolio_filter ul li {
+  color: #bbb !important;
+  &.active {
+    color: #fff !important;
+  }
+}
+.dark .tokyo_tm_portfolio .portfolio_filter ul li:hover {
+  color: #fff;
+}
+.dark .tokyo_tm_news ul li .details .title a {
+  color: #fff;
+}
+.dark .tokyo_tm_news ul li .details .date {
+  color: #bbb;
+}
+.dark .tokyo_tm_news ul li .details .date a,
+.dark .tokyo_tm_info ul li a {
+  color: #bbb;
+}
+
+.dark .tokyo_tm_news ul li .details .date a:hover {
+  color: #fff;
+}
+.dark .tokyo_tm_info ul li a:hover {
+  color: #fff;
+}
+.dark .tokyo_tm_contact .fields ul li input {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.dark .tokyo_tm_contact .fields .last textarea {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.dark .tokyo_tm_contact .fields ul li input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.dark .tokyo_tm_contact .fields textarea:focus {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+.dark .footer-wrapper {
+  background: #000;
+}
+.dark .footer-wrapper .copyright a {
+  color: #dedede;
+}
+
+.dark .tokyo_tm_contact .fields textarea {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-style: italic;
+}
+
+.dark .tokyo_tm_news ul li .details {
+  background-color: #323232;
+}
+.dark .tokyo_tm_news ul li .details .date {
+  color: #bbb;
+}
+.dark .tokyo_tm_news ul li .details .title {
+  color: #fff;
+}
+.dark .tokyo_tm_read_more .read-more {
+  color: #fff;
+}
+.dark .tokyo_tm_read_more .read-more:before {
+  background-color: #fff;
+}
+.dark .tokyo_tm_read_more .read-more span {
+  background-color: transparent;
+}
+.dark .tokyo_tm_news ul li .list_inner {
+  box-shadow: 0 0 15px #252525;
+}
+
+.dark .tokyo_tm_news ul li .image {
+  background: #111;
+}
+
+.dark {
+  .tooltip-wrapper {
+    h5 {
+      color: #000 !important;
+    }
+  }
+  .mymodal {
+    border: none;
+    background: #101010;
+  }
+  .box_inner {
+    background: #151515;
+    overflow-y: initial;
+  }
+  .description_wrap .image {
+    z-index: initial;
+  }
+  .portfolio_tm_modalbox {
+    .main_details .detailbox .first {
+      color: #fff;
+    }
+    li .svg {
+      filter: invert(1);
+    }
+  }
+  .social {
+    margin-left: -5px;
+    li .svg {
+      transition: 0.3s;
+    }
+  }
+  .news_share ul li .svg {
+    filter: invert(1);
+  }
+  .tokyo_tm_modalbox_about .box-inner {
+    background: #151515;
+    .about_title h3 {
+      color: #fff;
+    }
+    .progress_inner > span {
+      color: #bbb;
+    }
+    .progress_inner .background .bar_in {
+      background: #bbb;
+    }
+    .list_inner {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .partners .slick-list .slick-slide li img {
+      filter: invert(1);
+      background: #fff;
+    }
+  }
+
+  .tokyo_tm_modalbox_news {
+    .descriptions .bigger,
+    .date,
+    .date a {
+      color: #bbb;
+    }
+    .main_content {
+      .icon .svg {
+        filter: invert(1);
+      }
+      .news_share span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.dark .tokyo_tm_about .about_title {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.dark .tokyo_tm_about .about_text {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.dark .tokyo_tm_info ul li span:first-child {
+  color: #fff;
+}
+.dark .tokyo_tm_button a {
+  background: #fff;
+  color: #000;
+}
+
+.dark .tokyo_tm_progressbox {
+  background: #000;
+}
+.dark .progress_inner > span {
+  color: #efefef;
+}
+.dark .progress_inner .background {
+  background: #444;
+}
+.dark .progress_inner .background .bar_in {
+  background: #7b7b7b;
+}
+.dark .tokyo_tm_resumebox {
+  background: #000;
+}
+.dark .tokyo_tm_skill_list ul li .svg {
+  filter: invert(1);
+}
+.dark .tokyo_tm_resume_list ul:before {
+  background-color: #56585c;
+}
+.dark .tokyo_tm_short_info {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.dark .tokyo_tm_resume_list ul li:before {
+  background-color: #000;
+  border-color: #56585c;
+}
+.dark .tokyo_tm_resume_list ul li .time span {
+  background-color: rgba(255, 255, 255, 0.065);
+  color: #fff;
+}
+.dark .tokyo_tm_testimonials .list ul li .text {
+  border-color: #56585c;
+}
+.dark .tokyo_tm_testimonials .list ul li .text:before {
+  border-top-color: #56585c;
+}
+.dark .tokyo_tm_testimonials .list ul li .text:after {
+  border-top-color: #111;
+}
+.dark .tokyo_tm_services .list ul li .list_inner {
+  background-color: #323232;
+  border: none;
+}
+.dark .tokyo_tm_services .list ul li .number {
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #fff;
+}
+.dark .tokyo_tm_services .list ul li .list_inner:hover .number {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.dark .tokyo_tm_services .list ul li .title {
+  color: #fff;
+}
+.dark .tokyo_tm_partners {
+  background-color: #000;
+}
+.dark .tokyo_tm_partners ul li,
+.dark .tokyo_tm_partners .partners_inner {
+  border-color: #323232;
+}
+
+.dark .tokyo_tm_partners ul li img {
+  filter: invert(1);
+}
+.dark .tokyo_tm_facts .list ul li .list_inner {
+  border-color: #454545;
+}
+.dark .tokyo_tm_pricing {
+  background-color: #000;
+}
+.dark .tokyo_tm_pricing .list > ul > li .list_inner {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.dark .tokyo_tm_pricing .popular {
+  background-color: #444;
+  color: #eee;
+}
+.dark .tokyo_tm_all_wrap .leftpart {
+  border-right-color: #111;
+}
+.dark .Toastify__toast-theme--light {
+  background: #333;
+  color: #fff;
+}
+
+.dark .Toastify__close-button--light {
+  color: #fff;
+  opacity: 0.7 !important;
+}
