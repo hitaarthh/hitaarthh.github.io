@@ -4,7 +4,6 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import "react-tooltip/dist/react-tooltip.css";
-import ModalVideo from "react-modal-video";
 import Modal from "react-modal";
 import { useTheme } from "next-themes";
 import Image from "next/image";
@@ -16,18 +15,12 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 // Modal.setAppElement("#__next");
 
 const Portfolio = () => {
-  // for popup video for youtube
-  const [isOpenYoutube, setOpenYoutube] = useState(false);
   const { resolvedTheme = 'dark' } = useTheme();
-  // popup video for vimeo
-  const [isOpenVimeo, setOpenVimeo] = useState(false);
-
   // for modal details
   const [isOpenModalOne, setIsOpenModalOne] = useState(false);
   const [isOpenModalTwo, setIsOpenModalTwo] = useState(false);
   const [isOpenModalThree, setIsOpenModalThree] = useState(false);
   const [isOpenModalFour, setIsOpenModalFour] = useState(false);
-
 
   // for modal details method
   function toggleModalOne() {
@@ -68,18 +61,6 @@ const Portfolio = () => {
             data-tooltip-id="detail1"
             onClick={toggleModalOne}
           />
-          <ReactTooltip
-            id="detail1"
-            place="bottom"
-            variant="light"
-            float
-            render={() => (
-              <div className="tooltip-wrapper">
-                <h5>Rule Engine With AST</h5>
-                <span>Project Details</span>
-              </div>
-            )}
-          />
         </div>
       </div>
     </li>
@@ -97,18 +78,6 @@ const Portfolio = () => {
             data-for="detail2"
             data-tooltip-id="detail2"
             onClick={toggleModalTwo}
-          />
-          <ReactTooltip
-            id="detail2"
-            place="bottom"
-            variant="light"
-            float
-            render={() => (
-              <div className="tooltip-wrapper">
-                <h5>NaviG</h5>
-                <span>Seamless Wayfinding App</span>
-              </div>
-            )}
           />
         </div>
       </div>
@@ -128,18 +97,6 @@ const Portfolio = () => {
             data-tooltip-id="detail3"
             onClick={toggleModalThree}
           />
-          <ReactTooltip
-            id="detail3"
-            place="bottom"
-            variant="light"
-            float
-            render={() => (
-              <div className="tooltip-wrapper">
-                <h5>AutoValuePro</h5>
-                <span>Vehicle Valuation Wizard</span>
-              </div>
-            )}
-          />
         </div>
       </div>
     </li>
@@ -157,18 +114,6 @@ const Portfolio = () => {
             data-for="detail4"
             data-tooltip-id="detail4"
             onClick={toggleModalFour}
-          />
-          <ReactTooltip
-            id="detail4"
-            place="bottom"
-            variant="light"
-            float
-            render={() => (
-              <div className="tooltip-wrapper">
-                <h5>Weather Monitoring With Rollups and Aggregates</h5>
-                <span>Project Details</span>
-              </div>
-            )}
           />
         </div>
       </div>
