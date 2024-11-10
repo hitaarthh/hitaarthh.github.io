@@ -39,6 +39,7 @@ const News = () => {
               <div className="details">
                 <div className="extra">
                   <p className="date">
+                   {item.location}
                     <span>{item.date}</span>
                   </p>
                 </div>
@@ -94,6 +95,7 @@ const News = () => {
               <div className="details">
                 <div className="extra">
                   <p className="date">
+                 { singleData.location}
                     <a href="#">{singleData?.poster}</a>
                     <span>{singleData?.date}</span>
                   </p>
