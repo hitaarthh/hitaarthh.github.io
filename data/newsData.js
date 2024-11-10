@@ -87,7 +87,7 @@ module.exports = [
     id: 3,
     title: "The Sky and Serenity",
     img: "/img/news/sky.jpeg",
-    location: "Ettimadai, Coimbatore",
+    location: "Ettimadai, Tamil Nadu",
     date: "September 2023",
     descriptions: (
       <>
