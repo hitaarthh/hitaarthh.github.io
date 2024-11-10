@@ -11,13 +11,13 @@ const Resume = () => {
           id: 1,
           year: "2021 - 2025",
           institute: "Amrita Vishwa Vidyapeetham",
-          degree: "Bachelor Degree",
+          degree: "Bachelor's Of Technology",
         },
         {
           id: 2,
           year: "2018 - 2020",
           institute: "Sheiling House School",
-          degree: "Higher Secondary School",
+          degree: "Senior Secondary School",
         },
         {
           id: 2,

@@ -24,7 +24,6 @@ const Home = () => {
                   "Student",
                   "Writer",
                   "Photographer",
-                  "Storyteller",
                   "General Enthusiast",
                 ]}
                 loop
@@ -33,7 +32,7 @@ const Home = () => {
             </h4>
 
             <p className="job">
-            Creative soul based in Kollam, happy to travel, explore, and capture stories from every corner of life.
+            Creative human based in Kollam, happy to travel, explore, and capture stories from every corner of life.
             </p>
                         <Social />
           </div>

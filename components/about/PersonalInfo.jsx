@@ -13,16 +13,11 @@ const PersonalInfo = () => {
         },
         {
           id: 2,
-          name: "Age",
-          content: "21",
-        },
-        {
-          id: 3,
           name: "Address",
           content: "Kollam, Kerala, India",
         },
         {
-          id: 4,
+          id: 3,
           name: "Email",
           content: (
             <>
@@ -39,7 +34,7 @@ const PersonalInfo = () => {
         {
           id: 1,
           name: "Nationality",
-          content: "India",
+          content: "Indian",
         },
         {
           id: 2,
@@ -49,12 +44,7 @@ const PersonalInfo = () => {
         {
           id: 3,
           name: "Degree",
-          content: "Bachelor Of Technology",
-        },
-        {
-          id: 4,
-          name: "Interest",
-          content: "Photography, Football, Writing & Blogging",
+          content: "Electronics and Computer Engineering",
         },
       ],
     },
