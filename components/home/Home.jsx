@@ -24,7 +24,7 @@ const Home = () => {
                   "Student",
                   "Writer",
                   "Photographer",
-                  "General Enthusiast",
+                  "Enthusiast",
                 ]}
                 loop
                 typeSpeed={80}
