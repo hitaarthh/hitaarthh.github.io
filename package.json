@@ -1,0 +1,44 @@
+{
+  "name": "hitaarthh.github.io",
+  "version": "2.5.0",
+  "private": true,
+  "homepage": "https://hitaarthh.github.io",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build",
+    "predeploy": "npm run build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out -t true",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf out/ .next/"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "aos": "^2.3.4",
+    "next": "14.1.0",
+    "next-share": "^0.27.0",
+    "next-themes": "^0.2.1",
+    "photoswipe": "^5.4.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.7.1",
+    "react-modal": "^3.16.1",
+    "react-modal-video": "^2.0.1",
+    "react-photoswipe-gallery": "^3.0.1",
+    "react-slick": "^0.30.2",
+    "react-tabs": "^6.0.2",
+    "react-toastify": "^10.0.4",
+    "react-tooltip": "^5.26.3",
+    "react-typed": "^2.0.12",
+    "sass": "^1.71.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
