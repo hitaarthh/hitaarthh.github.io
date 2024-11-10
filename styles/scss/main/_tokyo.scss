@@ -437,26 +437,48 @@ h6 {
   display: flex;
   align-items: center;
 }
+// .tokyo_tm_home .avatar {
+//   min-width: 300px;
+//   min-height: 300px;
+//   position: relative;
+//   border-radius: 100%;
+// }
+// .tokyo_tm_home .avatar .image {
+//   position: absolute;
+//   top: 0px;
+//   bottom: 0px;
+//   left: 0px;
+//   right: 0px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   animation: morph 8s ease-in-out infinite 1s;
+//   background-blend-mode: multiply;
+//   box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+//   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+//   overflow: hidden;
+// }
 .tokyo_tm_home .avatar {
   min-width: 300px;
   min-height: 300px;
   position: relative;
-  border-radius: 100%;
+  border-radius: 50%; /* Ensures circular shape */
+  overflow: hidden; /* Prevents overflow for a clean circular cut */
 }
+
 .tokyo_tm_home .avatar .image {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  animation: morph 8s ease-in-out infinite 1s;
+  animation: none; /* Remove the morphing animation for stability */
   background-blend-mode: multiply;
   box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  overflow: hidden;
+  border-radius: 50%; /* Ensures the inner image is also circular */
 }
 
 @keyframes morph {
