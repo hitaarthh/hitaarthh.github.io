@@ -6,7 +6,7 @@ module.exports = [
     title: "Summer of Growth and Discovery",
     img: "/img/news/slb.jpg",
     location: "Pune, Maharastra",
-    date: "May - July2024",
+    date: "May - July 2024",
     descriptions: (
       <>
         <div className="descriptions">
