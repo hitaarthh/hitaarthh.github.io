@@ -11,7 +11,7 @@ const Resume = () => {
           id: 1,
           year: "2021 - 2025",
           institute: "Amrita Vishwa Vidyapeetham",
-          degree: "Bachelor's Of Technology",
+          degree: "Bachelor Of Technology",
         },
         {
           id: 2,
