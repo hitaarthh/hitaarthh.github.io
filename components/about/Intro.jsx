@@ -13,9 +13,6 @@ const Intro = () => {
           Capturing moments through photography has become a way to explore the world from different perspectives. I enjoy experimenting with various techniques, discovering new ways to tell stories through the lens, and finding beauty in unexpected details.
         </p>
         <p>
-          When it comes to gaming, strategy-driven titles like Call of Duty and Clash of Clans offer a unique blend of teamwork and tactics that I find fascinating. These games challenge me to think strategically, adapt to dynamic situations, and collaborate—all while having fun in the process.
-        </p>
-        <p>
           Reflecting on my journey through writing has become a meaningful way to connect with others. I love traveling across India, discovering new places, and experiencing diverse cultures. Each trip brings fresh perspectives that I capture in my blog—feel free to explore it to learn more about my travels and reflections.
         </p>
         <p>
