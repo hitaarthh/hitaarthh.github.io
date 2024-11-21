@@ -28,7 +28,7 @@ const AboutMain = () => {
 
           <div className="tokyo_tm_button" data-position="left">
             <a href="/img/Hitarth_RESUME.pdf" download>
-              <span>Download CV</span>
+              <span>Download Resume</span>
             </a>
           </div>
         </div>
@@ -38,7 +38,8 @@ const AboutMain = () => {
       <div className="tokyo_tm_progressbox">
         <div className="container">
           <div className="in">
-          <KnowledgeInterest />
+          <Resume />
+
           </div>
           {/* End in */}
         </div>
@@ -49,7 +50,7 @@ const AboutMain = () => {
       <div className="tokyo_tm_skillbox">
         <div className="container">
           <div className="in">
-          <Resume />
+          <KnowledgeInterest />
 
           </div>
         </div>

@@ -2,53 +2,59 @@ import React from "react";
 
 const Resume = () => {
   const resumeContent = [
-    {
-      id: 1,
-      colClass: "left",
-      title: "Education",
-      resume: [
-        {
-          id: 1,
-          year: "2021 - 2025",
-          institute: "Amrita Vishwa Vidyapeetham",
-          degree: "Bachelor Of Technology",
-        },
-        {
-          id: 2,
-          year: "2018 - 2020",
-          institute: "Sheiling House School",
-          degree: "Senior Secondary School",
-        },
-        {
-          id: 2,
-          year: "2004 - 2018",
-          institute: "Sheiling House School",
-          degree: "High School",
-        },
-      ],
-    },
+    // {
+    //   id: 1,
+    //   colClass: "left",
+    //   title: "Education",
+    //   resume: [
+    //     {
+    //       id: 1,
+    //       year: "2021 - 2025",
+    //       institute: "Amrita Vishwa Vidyapeetham",
+    //       degree: "Bachelor Of Technology",
+    //     },
+    //     {
+    //       id: 2,
+    //       year: "2018 - 2020",
+    //       institute: "Sheiling House School",
+    //       degree: "Senior Secondary School",
+    //     },
+    //     {
+    //       id: 2,
+    //       year: "2004 - 2018",
+    //       institute: "Sheiling House School",
+    //       degree: "High School",
+    //     },
+    //   ],
+    // },
     {
       id: 2,
-      colClass: "right",
+      colClass: "center",
       title: "Experience",
       resume: [
         {
+          id: 1,
+          year: "August 2024 - Present",
+          institute: "Traboda Cyber Labs",
+          degree: "Full Stack Software Developer",
+        },
+        {
           id: 2,
           year: "May 2024 - July 2024",
-          institute: "SLB",
+          institute: "Schlumberger(SLB)",
           degree: "Software Engineer Intern",
         },
         {
           id: 3,
           year: "Dec 2023 - April 2024",
           institute: "Drupal",
-          degree: "Open Source Developer",
+          degree: "Front End Developer",
         },
         {
           id: 4,
           year: "Oct 2021 - Nov 2023",
           institute: "Team bi0s",
-          degree: "Student Researcher",
+          degree: "Full Stack Developer",
         },
       ],
     },
