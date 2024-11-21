@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
       >
         <div className="tokyo_tm_all_wrap">
           <ThemeProvider attribute="class">
-            {pathname !== "/" ? <ThemeSwitch /> : ""}
+            {<ThemeSwitch />}
             {/* End themeSwicher */}
             {children}
             {/* Main next component pageprops */}
