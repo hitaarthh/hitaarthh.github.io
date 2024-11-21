@@ -3,7 +3,7 @@ module.exports = [
     id: 1,
     icon: "/img/svg/home-run.svg",
     menuName: "Home",
-    routePath: "/home",
+    routePath: "/",
   },
   {
     id: 2,

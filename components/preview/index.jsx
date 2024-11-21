@@ -13,14 +13,14 @@ const Preview = () => {
     setTheme("dark");
     // Navigate to home after a brief delay to ensure theme is applied
     const redirectTimer = setTimeout(() => {
-      window.location.href = "/home";  // Using window.location as a fallback
+      window.location.href = "/";  // Using window.location as a fallback
     }, 100);
 
     return () => clearTimeout(redirectTimer);
   }, []);
 
   return (
-    <Link href="/home"></Link>
+    <Link href="/"></Link>
   );
 };
 
