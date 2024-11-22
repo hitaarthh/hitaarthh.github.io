@@ -1437,6 +1437,127 @@ body.modal {
   height: 15px;
 }
 
+// Add these to your existing tokyo_tm_modalbox_news styles
+.tokyo_tm_modalbox_news {
+  .medium-link {
+    font-family: var(--font-montserrat);
+    color: #1a8917 !important;
+    margin-left: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+      letter-spacing: 1px;
+    }
+  }
+
+  .descriptions {
+    // Medium content styling
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-montserrat);
+      margin: 25px 0 15px;
+      line-height: 1.4;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: #767676;
+      font-family: var(--font-mulish);
+      line-height: 1.7;
+    }
+
+    pre {
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: monospace;
+    }
+
+    blockquote {
+      border-left: 4px solid #000;
+      padding-left: 20px;
+      margin: 20px 0;
+      font-style: italic;
+      color: #555;
+    }
+
+    ul, ol {
+      margin: 20px 0 20px 20px;
+      
+      li {
+        margin-bottom: 10px;
+        color: #767676;
+      }
+    }
+
+    a {
+      color: #1a8917;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    figure {
+      margin: 25px 0;
+      
+      img {
+        border-radius: 5px;
+      }
+
+      figcaption {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        margin-top: 10px;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+// Add these to your existing loading states
+.loading_state {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .loading_text {
+    font-family: var(--font-montserrat);
+    color: #767676;
+    font-size: 18px;
+    font-style: italic;
+  }
+}
+
+.error_state {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .error_text {
+    font-family: var(--font-montserrat);
+    color: #767676;
+    font-size: 18px;
+    font-style: italic;
+  }
+}
 /*---------------------------------------------------*/
 /*	08) TOKYO CONTACT
 /*---------------------------------------------------*/

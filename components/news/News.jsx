@@ -11,33 +11,6 @@ const News = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Function to clean up Medium content
-  const cleanMediumContent = (content) => {
-    if (!content) return '';
-    
-    // Create a temporary div to parse the HTML
-    const temp = document.createElement('div');
-    temp.innerHTML = content;
-
-    // Remove the first figure/image
-    const firstFigure = temp.querySelector('figure');
-    if (firstFigure) {
-      firstFigure.remove();
-    }
-
-    // Remove medium's subtitle which usually comes after h1
-    const subtitle = temp.querySelector('h4');
-    if (subtitle) {
-      subtitle.remove();
-    }
-
-    // Clean up empty paragraphs
-    const emptyParagraphs = temp.querySelectorAll('p:empty');
-    emptyParagraphs.forEach(p => p.remove());
-
-    return temp.innerHTML;
-  };
-
   useEffect(() => {
     const fetchPosts = async () => {
       try {
@@ -59,10 +32,6 @@ const News = () => {
     setIsOpen(true);
   };
 
-  const handleModle = (id) => {
-    handleblogsData(id);
-  };
-
   if (loading) {
     return (
       <div className="tokyo_tm_news">
@@ -77,18 +46,34 @@ const News = () => {
     return (
       <div className="tokyo_tm_news">
         <div className="error_state">
-          <div className="error_text">No blogs found. Please try again later.</div>
+          <div className="error_text">No blogs found.</div>
         </div>
       </div>
     );
   }
+
+  const cleanContent = (content) => {
+    if (!content) return '';
+    const temp = document.createElement('div');
+    temp.innerHTML = content;
+    
+    // Remove first image/figure
+    const firstFigure = temp.querySelector('figure');
+    if (firstFigure) firstFigure.remove();
+    
+    // Remove empty paragraphs
+    const emptyParagraphs = temp.querySelectorAll('p:empty');
+    emptyParagraphs.forEach(p => p.remove());
+
+    return temp.innerHTML;
+  };
 
   return (
     <>
       <ul>
         {posts.map((item) => (
           <li key={item.id}>
-            <div className="list_inner" onClick={() => handleModle(item?.id)}>
+            <div className="list_inner" onClick={() => handleblogsData(item?.id)}>
               <div className="image">
                 <div
                   className="main"
@@ -120,9 +105,8 @@ const News = () => {
 
       <Modal
         isOpen={isOpen}
-        ariaHideApp={false}
         onRequestClose={() => setIsOpen(false)}
-        contentLabel="Blog post"
+        contentLabel="Blog Modal"
         className="mymodal"
         overlayClassName="myoverlay"
         closeTimeoutMS={500}
@@ -139,6 +123,7 @@ const News = () => {
           
           <div className="box_inner">
             <div className="description_wrap scrollable">
+              {/* Featured Image */}
               <div className="image">
                 <div
                   className="main"
@@ -149,22 +134,32 @@ const News = () => {
                   }}
                 ></div>
               </div>
+              
+              {/* Post Meta */}
               <div className="details">
                 <div className="extra">
                   <p className="date">
                     {singleData?.location}
-                    <a href={singleData?.link} target="_blank" rel="noopener noreferrer">
-                      {' '}Read on Medium
+                    <a 
+                      href={singleData?.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="medium-link"
+                    >
+                      Read on Medium
                     </a>
                     <span>{singleData?.date}</span>
                   </p>
                 </div>
                 <h3 className="title">{singleData?.title}</h3>
               </div>
+
+              {/* Post Content */}
               <div className="main_content">
                 <div 
+                  className="descriptions"
                   dangerouslySetInnerHTML={{ 
-                    __html: cleanMediumContent(singleData?.descriptions) 
+                    __html: cleanContent(singleData?.descriptions) 
                   }} 
                 />
                 <div className="news_share">
