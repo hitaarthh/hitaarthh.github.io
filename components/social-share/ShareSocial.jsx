@@ -12,52 +12,48 @@ import {
   TumblrIcon,
 } from "next-share";
 
-const ShareSocial = ({ blogData }) => {
-  // Default content if no blog data is passed
-  const shareUrl = blogData?.link || "https://hitaarthh.github.io";
-  const shareTitle = blogData?.title || "Hitarth's Blog";
-  const shareDescription = blogData?.descriptions
-    ? blogData.descriptions.replace(/<[^>]*>/g, '').slice(0, 200) + '...'
-    : "Check out this insightful blog post from Hitarth Anand Rohra, covering software engineering, technology, and personal experiences.";
-
+const ShareSocial = () => {
   return (
     <div className="social-share">
       <FacebookShareButton
-        url={shareUrl}
-        quote={shareDescription}
-        hashtag={"#TechBlog"}
+        url={"https://www.facebook.com/"}
+        quote={
+          "Check out this insightful blog post from Hitarth Anand Rohra, covering software engineering, technology, and personal experiences."
+        }
+        hashtag={"#hitaarthh"}
       >
         <FacebookIcon size={32} round />
       </FacebookShareButton>
 
       <PinterestShareButton
-        url={shareUrl}
-        media={blogData?.img || "https://hitaarthh.github.io/img/logo/logo.png"}
-        description={shareTitle}
+        url={"https://www.hitaarthh.com/news"}
+        media={
+          "Check out this insightful blog post from Hitarth Anand Rohra, covering software engineering, technology, and personal experiences."
+        }
       >
         <PinterestIcon size={32} round />
       </PinterestShareButton>
 
       <TwitterShareButton
-        url={shareUrl}
-        title={shareTitle}
+        url={"https://www.hitaarthh.com/news"}
+        title={
+          "Check out this insightful blog post from Hitarth Anand Rohra, covering software engineering, technology, and personal experiences."
+        }
       >
         <TwitterIcon size={32} round />
       </TwitterShareButton>
 
       <LinkedinShareButton
-        url={shareUrl}
-        title={shareTitle}
-        summary={shareDescription}
+        url={"https://www.linkedin.com/in/hitarth-rohra/"}
       >
         <LinkedinIcon size={32} round />
       </LinkedinShareButton>
 
       <TumblrShareButton
-        url={shareUrl}
-        title={shareTitle}
-        caption={shareDescription}
-        tags={["technology", "programming", "engineering"]}
+        url={"https://www.hitaarthh.com/news"}
+        title={
+          "We are ib-themes, a quality and dedicated group of individuals who love modern trend like React, Vue and Angular JS Web Templates. We are growing with Modern Web Technologies."
+        }
       >
         <TumblrIcon size={32} round />
       </TumblrShareButton>

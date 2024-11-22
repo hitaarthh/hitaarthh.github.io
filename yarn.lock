@@ -204,7 +204,7 @@ classlist-polyfill@^1.0.3:
   resolved "https://registry.npmjs.org/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz"
   integrity sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==
 
-classnames@^2.2.5, classnames@^2.3.0:
+classnames@^2.2.5, classnames@^2.3.0, classnames@^2.3.2:
   version "2.5.1"
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz"
   integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
@@ -757,6 +757,14 @@ react-photoswipe-gallery@^3.0.1:
   resolved "https://registry.npmjs.org/react-photoswipe-gallery/-/react-photoswipe-gallery-3.0.1.tgz"
   integrity sha512-5RS/72iPNMieDneAxhTB9uT39Gp9E1JAgv83FUZJzFOnZRcJezneiRuXcU+0Wi7VJ7hRU7A+R5ocZpMVacUrYA==
 
+react-share@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.npmjs.org/react-share/-/react-share-5.1.1.tgz"
+  integrity sha512-9rX6X4FiLwKi/eygTx6TWEKv0EuL15AdP6vnFMw5sA4UwTja0mgV4N3gAbkE9+5n3ry7BsBBeOnhaXbJ+jn9kQ==
+  dependencies:
+    classnames "^2.3.2"
+    jsonp "^0.2.1"
+
 react-slick@^0.30.2:
   version "0.30.2"
   resolved "https://registry.npmjs.org/react-slick/-/react-slick-0.30.2.tgz"
@@ -808,7 +816,7 @@ react-typed@^2.0.12:
   dependencies:
     typed.js "^2.1.0"
 
-react@*, "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0 || ^18.2.0", react@^18, react@^18.0.0, react@^18.2.0, "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16, react@>=16.14.0, react@>=16.6.0, react@>=17.0.2, react@>16.8.0:
+react@*, "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^17 || ^18", "react@^17.0.0 || ^18.2.0", react@^18, react@^18.0.0, react@^18.2.0, "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16, react@>=16.14.0, react@>=16.6.0, react@>=17.0.2, react@>16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==

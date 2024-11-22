@@ -30,6 +30,7 @@
     "react-modal": "^3.16.1",
     "react-modal-video": "^2.0.1",
     "react-photoswipe-gallery": "^3.0.1",
+    "react-share": "^5.1.1",
     "react-slick": "^0.30.2",
     "react-tabs": "^6.0.2",
     "react-toastify": "^10.0.4",
