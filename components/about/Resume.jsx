@@ -33,6 +33,12 @@ const Resume = () => {
       title: "Experience",
       resume: [
         {
+          id: 1,
+          year: "Dec 2024 - present",
+          institute: "PY Insights by Powr of You",
+          degree: "Software Engineer",
+        },
+        {
           id: 2,
           year: "May 2024 - July 2024",
           institute: "Schlumberger(SLB)",

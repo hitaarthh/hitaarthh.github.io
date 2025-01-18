@@ -21,8 +21,8 @@ const Home = () => {
             <h4 className="typer">
               <ReactTyped
                 strings={[
+                  "Software Developer",
                   "Student",
-                  "Writer",
                   "Photographer",
                   "Enthusiast",
                 ]}
@@ -32,7 +32,7 @@ const Home = () => {
             </h4>
 
             <p className="job">
-            Creative human based in Kollam, happy to travel, explore, and capture stories from every corner of life.
+            Creative human based in Kanpur, happy to travel, explore, and capture stories from every corner of life.
             </p>
                         <Social />
           </div>

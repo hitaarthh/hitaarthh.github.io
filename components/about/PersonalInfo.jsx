@@ -14,7 +14,7 @@ const PersonalInfo = () => {
         {
           id: 2,
           name: "Address",
-          content: "Kollam, Kerala, India",
+          content: "Kanpur, Uttar Pradesh, India",
         },
         {
           id: 3,
@@ -39,7 +39,7 @@ const PersonalInfo = () => {
         {
           id: 2,
           name: "Study",
-          content: "Amrita Vishwa Vidyapeetham, Kerala",
+          content: "Amrita Vishwa Vidyapeetham",
         },
         {
           id: 3,
