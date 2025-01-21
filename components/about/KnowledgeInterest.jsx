@@ -8,10 +8,10 @@ const KnowledgeInterest = () => {
       colClass: "left",
       title: "Programming Technologies",
       content: [
-        " Java, Python, C/C++",
-        " JavaScript/TypeScript , PL/MySQL",
-        " Node.js, Express.js",
-        " React.js, Angular.js",
+        " Java, Python, Golang",
+        " JavaScript/TypeScript , SQL",
+        " React/Next JS, Angular JS",
+        " Node JS, Express JS",
         " Spring Boot, RESTful API",
        ],
     },
@@ -24,7 +24,7 @@ const KnowledgeInterest = () => {
         " Docker, Kubernetes",
         " MongoDB, MySQL",
         " Kafka, SonarQube",
-        " Azure, Unix/Linux",
+        " Azure/AWS, Unix/Linux",
       ],
     }
   ];
