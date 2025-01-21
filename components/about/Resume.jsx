@@ -35,13 +35,13 @@ const Resume = () => {
         {
           id: 1,
           year: "Dec 2024 - present",
-          institute: "PY Insights by Powr of You",
-          degree: "Software Engineer",
+          institute: "PY Insights",
+          degree: "Software Development Engineer",
         },
         {
           id: 2,
           year: "May 2024 - July 2024",
-          institute: "Schlumberger(SLB)",
+          institute: "SLB",
           degree: "Software Engineer Intern",
         },
         {
