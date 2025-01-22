@@ -34,25 +34,25 @@ const Resume = () => {
       resume: [
         {
           id: 1,
-          year: "Dec 2024 - present",
+          year: "Dec 24 - present",
           institute: "PY Insights",
           degree: "Software Engineer",
         },
         {
           id: 2,
-          year: "May 2024 - July 2024",
+          year: "May 24 - Jul 24",
           institute: "SLB",
           degree: "Software Engineer Intern",
         },
         {
           id: 3,
-          year: "Dec 2023 - April 2024",
+          year: "Dec 23 - Apr 24",
           institute: "Drupal",
           degree: "Front End Developer",
         },
         {
           id: 4,
-          year: "Oct 2021 - Nov 2023",
+          year: "Oct 21 - Nov 23",
           institute: "Team bi0s",
           degree: "Full Stack Developer",
         },
